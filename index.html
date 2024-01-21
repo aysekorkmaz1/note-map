@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <!-- leaflet.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- bootsrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- bizim css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- sol menü -->
+    <div class="wrapper">
+      <aside>
+        <!-- başlık -->
+        <h1>
+          <span>Notlar</span>
+        </h1>
+        <!-- form alanı -->
+        <form>
+          <div>
+            <label>Not Başlığı:</label>
+            <input placeholder="örn:akşam gidilicek" type="text" />
+          </div>
+
+          <div>
+            <label>Tarih Ekle:</label>
+            <input placeholder="örn:akşam gidilicek" type="date" />
+          </div>
+
+          <div>
+            <label>Durum:</label>
+            <select>
+              <option value="goto">Ziyaret</option>
+              <option value="park">Park Yeri</option>
+              <option value="home">Ev</option>
+              <option value="job">İş</option>
+            </select>
+          </div>
+
+          <div class="buttons">
+            <button type="button">İptal</button>
+            <button type="submit">Ekle</button>
+          </div>
+        </form>
+
+        <!-- note listesi -->
+        <ul>
+          <!-- <li>
+            <div class="info">
+              <p>BAŞLIK</p>
+              <p>
+                <span>Tarih:</span>
+                <span>12-01</span>
+              </p>
+              <p>
+                <span>Durum:</span>
+                <span>İş</span>
+              </p>
+            </div>
+            <div class="icons">
+              <i id="fly" class="bi bi-airplane-fill"></i>
+              <i class="bi bi-trash3-fill"></i>
+            </div>
+          </li> -->
+        </ul>
+      </aside>
+    </div>
+
+    <!-- harita -->
+    <div id="map"></div>
+
+    <!-- leaflet.js -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

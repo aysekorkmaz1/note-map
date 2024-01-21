@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#map {
+  height: 100vh;
+  z-index: 20;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.wrapper {
+  display: flex;
+  align-items: start;
+  margin-top: 75px;
+  position: fixed;
+  left: 10px;
+  z-index: 50;
+  height: 100vh;
+}
+
+aside {
+  background: rgba(53, 51, 51, 0.7);
+  color: white;
+  height: 900px;
+  width: 280px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside:hover {
+  background: rgb(53, 51, 51);
+}
+
+aside h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'indie flower';
+  font-size: 33px;
+  letter-spacing: 9px;
+  background: rgb(53, 51, 51);
+  padding: 3px;
+  border-radius: 10px;
+  margin: 10px 0 20px;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form select {
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+}
+
+.buttons {
+  flex-direction: row;
+}
+
+.buttons button {
+  flex: 1;
+  background: black;
+  color: white;
+  font-family: 'poppins';
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.buttons button:first-child {
+  background: rgb(141, 139, 139);
+}
+
+.buttons button:hover {
+  filter: brightness(70%);
+  border: 2px solid purple;
+}
+
+/* listeleme alanı */
+ul {
+  overflow: auto;
+  height: 100%;
+  margin-top: 20px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ul::-webkit-scrollbar {
+  background: transparent;
+  width: 5px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 4px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(70, 70, 70);
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+}
+
+li p:first-child {
+  font-family: 'indie flower';
+  font-size: x-large;
+}
+
+li p span:first-child {
+  font-weight: bold;
+}
+
+li .icons {
+  display: flex;
+  gap: 10px;
+}
+
+li i {
+  cursor: pointer;
+  font-size: 21px;
+  transition: all 0.3s;
+}
+
+li .icons i:first-child:hover {
+  filter: drop-shadow(0 0 10px rgb(0, 179, 255));
+}
+
+li .icons i:last-child:hover {
+  filter: drop-shadow(0 0 10px red);
+}
